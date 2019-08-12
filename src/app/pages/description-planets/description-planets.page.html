@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="tabs/planets"></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{ planets.name }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-item>
+      <ion-icon name="planet" slot="start"></ion-icon>
+      <ion-label>{{ planets.terrain }}</ion-label>
+    </ion-item>
+    <ion-card-content>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <p>Rotation period: {{ planets.rotation_period }}</p>
+          </ion-col>
+          <ion-col>
+            <p>Orbital period: {{ planets.orbital_period }}</p>
+          </ion-col>
+          <ion-col>
+            <p>Diameter: {{ planets.diameter }}</p>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <p>Climate: {{ planets.climate }}</p>
+          </ion-col>
+          <ion-col>
+            <p>Diameter: {{ planets.diameter }}</p>
+          </ion-col>
+          <ion-col>
+            <p>Gravity: {{ planets.gravity }}</p>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

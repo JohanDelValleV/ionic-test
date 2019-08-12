@@ -1,0 +1,44 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-back-button defaultHref="tabs/starships"></ion-back-button>
+      </ion-buttons>
+      <ion-title>{{ starships.name }}</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>
+    <ion-card>
+      <ion-item>
+        <ion-icon name="jet" slot="start"></ion-icon>
+        <ion-label>{{ starships.name }}</ion-label>
+      </ion-item>
+      <ion-card-content>
+        <ion-grid>
+          <ion-row>
+            <ion-col>
+              <p>Model: {{ starships.model }}</p>
+            </ion-col>
+            <ion-col>
+              <p>Passengers: {{ starships.passengers }}</p>
+            </ion-col>
+            <ion-col>
+              <p>Cargo capacity: {{ starships.cargo_capacity }}</p>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              <p>Starship class: {{starships.starship_class}}</p>
+            </ion-col>
+            <ion-col>
+              <p>Hyperdrive rating: {{starships.hyperdrive_rating}}</p>
+            </ion-col>
+            <ion-col>
+              <p>Max atmosphering speed: {{starships.max_atmosphering_speed}}</p>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-card-content>
+    </ion-card>
+  </ion-content>
+  

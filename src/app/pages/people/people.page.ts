@@ -1,18 +1,19 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
 import { SwapiService } from "../../services/swapi.service";
+import { SelectiveLoadingStrategy } from "../../services/selectiveLoadingStrategy.service";
 
 @Component({
-  selector: 'app-people',
-  templateUrl: './people.page.html',
-  styleUrls: ['./people.page.scss'],
+  selector: "app-people",
+  templateUrl: "./people.page.html",
+  styleUrls: ["./people.page.scss"]
 })
 export class PeoplePage implements OnInit {
-  people:any;
-  iconname = 'people';
-  constructor(private swapiService:SwapiService) { }
+  people: any;
+  iconname = "people";
+  constructor(private swapiService: SwapiService, private loader: SelectiveLoadingStrategy) {}
 
   ngOnInit() {
+    this.loader.preloadRoute('peopleDetail')
     this.people = this.swapiService.getSwapi('people');
   }
-
 }

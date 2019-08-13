@@ -9,9 +9,9 @@ const routes: Routes = [
   { path: 'planets', loadChildren: './pages/planets/planets.module#PlanetsPageModule' },
   { path: 'people', loadChildren: './pages/people/people.module#PeoplePageModule' },
   { path: 'starships', loadChildren: './pages/starships/starships.module#StarshipsPageModule' },
-  { path: 'planets/:id', loadChildren: './pages/description-planets/description-planets.module#DescriptionPlanetsPageModule' },
-  { path: 'people/:id', loadChildren: './pages/description-people/description-people.module#DescriptionPeoplePageModule' },
-  { path: 'starships/:id', loadChildren: './pages/description-starships/description-starships.module#DescriptionStarshipsPageModule' }
+  { path: 'planets/:id', loadChildren: './pages/description-planets/description-planets.module#DescriptionPlanetsPageModule', data: { name: 'planetsDetail'} },
+  { path: 'people/:id', loadChildren: './pages/description-people/description-people.module#DescriptionPeoplePageModule', data: { name: 'peopleDetail' } },
+  { path: 'starships/:id', loadChildren: './pages/description-starships/description-starships.module#DescriptionStarshipsPageModule', data: { name: 'starshipsDetail' } }
 ];
 @NgModule({
   imports: [

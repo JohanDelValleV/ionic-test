@@ -1,1 +1,11 @@
-
+ion-tab-bar {
+  ion-tab-button:nth-of-type(1) {
+    --color-selected: #3880FF !important;
+  }
+  ion-tab-button:nth-of-type(2) {
+    --color-selected: #0CD1E8 !important;
+  }
+  ion-tab-button:nth-of-type(3) {
+    --color-selected: #7044FF !important;
+  }
+}

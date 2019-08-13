@@ -12,6 +12,9 @@ log.txt
 .vscode/
 npm-debug.log*
 
+android/
+resources/
+
 .idea/
 .ionic/
 .sourcemaps/

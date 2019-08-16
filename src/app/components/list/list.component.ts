@@ -1,6 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Router } from "@angular/router";
-import { NativeTransitionOptions, NativePageTransitions } from '@ionic-native/native-page-transitions/ngx';
 
 @Component({
   selector: 'app-list',
@@ -12,7 +11,7 @@ export class ListComponent implements OnInit {
 @Input() icon;
 id: string;
 path: string;
-  constructor(private router:Router, private nativePageTransitions:NativePageTransitions) { }
+  constructor(private router:Router) { }
 
   ngOnInit() {
 

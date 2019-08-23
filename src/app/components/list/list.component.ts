@@ -9,6 +9,8 @@ import { Router } from "@angular/router";
 export class ListComponent implements OnInit {
 @Input() swapi;
 @Input() icon;
+@Input() color;
+
 id: string;
 path: string;
   constructor(private router:Router) { }

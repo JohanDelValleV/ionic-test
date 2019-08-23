@@ -30,7 +30,7 @@ export class AppComponent {
       this.splashScreen.hide();
     });
   }
-
+  // Android
   backButtonEvent() {
     this.platform.backButton.subscribe(async () => {
       if (this.router.url === "/tabs/planets") {

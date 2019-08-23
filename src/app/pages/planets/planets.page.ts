@@ -10,6 +10,7 @@ import { SelectiveLoadingStrategy } from "../../services/selectiveLoadingStrateg
 export class PlanetsPage implements OnInit {
   planets:any;
   iconname = 'planet'
+  color = "#3880FF";
   constructor(private swapiService:SwapiService, private loader:SelectiveLoadingStrategy) { }
 
   ngOnInit() {

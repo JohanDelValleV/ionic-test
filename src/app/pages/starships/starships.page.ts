@@ -10,6 +10,7 @@ import { SelectiveLoadingStrategy } from "../../services/selectiveLoadingStrateg
 export class StarshipsPage implements OnInit {
   starships: any;
   iconname ='jet';
+  color='#7044FF';
   constructor(private swapiService:SwapiService, private loader:SelectiveLoadingStrategy) { }
 
   ngOnInit() {

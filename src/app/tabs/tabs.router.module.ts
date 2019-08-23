@@ -38,6 +38,16 @@ const routes: Routes = [
         ]
       },
       {
+        path: 'images',
+        children: [
+          {
+            path: '',
+            loadChildren: () =>
+              import('../pages/images/images.module').then(m => m.ImagesPageModule)
+          }
+        ]
+      },
+      {
         path: '',
         redirectTo: '/tabs/planets',
         pathMatch: 'full'

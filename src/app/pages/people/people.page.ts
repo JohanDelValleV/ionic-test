@@ -10,6 +10,7 @@ import { SelectiveLoadingStrategy } from "../../services/selectiveLoadingStrateg
 export class PeoplePage implements OnInit {
   people: any;
   iconname = "people";
+  color = "#0CD1E8";
   constructor(private swapiService: SwapiService, private loader: SelectiveLoadingStrategy) {}
 
   ngOnInit() {

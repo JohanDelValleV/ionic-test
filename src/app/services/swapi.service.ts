@@ -9,9 +9,9 @@ const SWAPIURL = environment.swapiUrl;
 })
 export class SwapiService {
 
-  constructor(private http:HttpClient) { }
-  
-  getSwapi(path){
+  constructor(private http: HttpClient) { }
+
+  getSwapi(path) {
     return this.http.get(`${SWAPIURL}${path}`);
   }
 }

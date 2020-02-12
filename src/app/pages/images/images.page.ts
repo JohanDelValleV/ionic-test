@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { fromEvent, Observable } from 'rxjs';
 
 @Component({
   selector: 'app-images',
@@ -10,7 +9,7 @@ export class ImagesPage implements OnInit {
   constructor() {}
 
   ngOnInit() {
-    this.lazyLoad();
+
   }
 
   lazyLoad() {
@@ -38,4 +37,5 @@ export class ImagesPage implements OnInit {
     if (!src) { return; }
     image.src = src;
   }
+
 }

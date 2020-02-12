@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { SwapiService } from '../../services/swapi.service';
-import { SelectiveLoadingStrategy } from "../../services/selectiveLoadingStrategy.service";
+import { SelectiveLoadingStrategy } from '../../services/selectiveLoadingStrategy.service';
 
 @Component({
   selector: 'app-planets',
@@ -8,10 +8,10 @@ import { SelectiveLoadingStrategy } from "../../services/selectiveLoadingStrateg
   styleUrls: ['./planets.page.scss'],
 })
 export class PlanetsPage implements OnInit {
-  planets:any;
-  iconname = 'planet'
-  color = "#3880FF";
-  constructor(private swapiService:SwapiService, private loader:SelectiveLoadingStrategy) { }
+  planets: any;
+  iconname = 'planet';
+  color = '#3880FF';
+  constructor(private swapiService: SwapiService, private loader: SelectiveLoadingStrategy) { }
 
   ngOnInit() {
     this.loader.preloadRoute('planetsDetail');

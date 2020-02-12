@@ -7,6 +7,8 @@ import { IonicModule } from '@ionic/angular';
 
 import { ImagesPage } from './images.page';
 
+import { DirectivesModule } from '../directives.module';
+
 const routes: Routes = [
   {
     path: '',
@@ -19,7 +21,8 @@ const routes: Routes = [
     CommonModule,
     FormsModule,
     IonicModule,
-    RouterModule.forChild(routes)
+    RouterModule.forChild(routes),
+    DirectivesModule
   ],
   declarations: [ImagesPage]
 })

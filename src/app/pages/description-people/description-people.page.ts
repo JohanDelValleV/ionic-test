@@ -11,13 +11,12 @@ export class DescriptionPeoplePage implements OnInit {
   constructor(
     private swapiService: SwapiService,
     private route: ActivatedRoute
-  ) {}
+  ) { }
   people: any;
   photo: any;
   ngOnInit() {
     this.route.paramMap.subscribe(params => {
       let id = params.get('id');
-
       this.people = this.swapiService
         .getSwapi(`people/${id}`)
         .subscribe(data => {
